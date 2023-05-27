@@ -1,0 +1,67 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header header"
+    "summary summary"
+    "attribution attribution";
+}
+
+body > article:first-child {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+  }
+  
+body > article:nth-child(2){
+    grid-area: summary;
+    display: flex;
+    flex-direction: column;
+}
+
+.topic-result-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "topic topic-result"
+}
+
+.topic {
+    grid-area: topic;
+}
+
+.topic-result {
+    grid-area: topic-result;
+}
+
+.topic-result-container.reaction {
+    background-color: hsla(0, 100%, 67%, 0.200);
+    border-radius: 10%;
+}
+
+.topic-result-container.memory {
+    background-color: hsla(39, 100%, 56%, 0.200);
+    border-radius: 10%;
+}
+
+.topic-result-container.verbal {
+    background-color: hsl(166, 100%, 37%, 0.200);
+    border-radius: 10%;
+}
+
+.topic-result-container.visual {
+    background-color: hsl(234, 85%, 45%, 0.200);
+    border-radius: 10%;
+}
+
+
+
+
+
+  
+.attribution {
+    grid-area: attribution;
+    
+}
+  
