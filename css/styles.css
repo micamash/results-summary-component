@@ -188,6 +188,10 @@ button {
 button:hover {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
+
+.attribution {
+    padding-top: 15px;
+}
   
 .attribution > a {
    text-decoration: none;
@@ -210,7 +214,7 @@ button:hover {
     
     main {
         flex-direction: row;
-        box-shadow: 0 1em 3em -0.4em rgb(142, 142, 150);
+        box-shadow: 0 1em 4em -0.4em hsl(239, 85%, 90%);
         border: 1px transparent;
         border-radius: 30px;
     }
