@@ -23,10 +23,15 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
 
-![Large Screen Component](assets/images/lrg-screen.png)
-![Mobile/Small Screen Component](assets/images/small-screen.png)
+Large Screen:
+
+[<img src="assets/images/lrg-screen.png" height="300"/>](lrg-screen)
+
+Small screen:
+
+[<img src="assets/images/small-screen.png" width="230"/>](small-screen)
 
 ### Links
 
