@@ -92,7 +92,7 @@ p.light-weight.percentage {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90vw;
+  width: 375px;
   gap: 15px;
 }
 
