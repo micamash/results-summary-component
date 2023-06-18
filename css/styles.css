@@ -70,65 +70,85 @@ body > article:first-child {
    padding-top: 0;
   }
 
+
+
+
 body > article:nth-child(2){
-    /* grid-area: summary;
-    display: flex;
-    flex-direction: column;
-    background-color: grad; */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  width: 90vw;
 }
+
+body > article:nth-child(2) > h2 {
+    padding-right: 200px;
+  }
 
 .topic-result-container {
-    /* display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "topic topic-result";
-    justify-content: center;
-    align-items: center; */
-}
-
-.topic {
-    /* grid-area: topic; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
 }
 
 .reaction-main {
-    /* color: hsl(0, 100%, 67%); */
+    color: hsl(0, 100%, 67%);
 }
 
 .memory-main {
-    /* color: hsl(39, 100%, 56%); */
+    color: hsl(39, 100%, 56%);
 }
 
 .verbal-main {
-    /* color: hsl(166, 100%, 37%); */
+    color: hsl(166, 100%, 37%);
 }
 
 .visual-main {
-    /* color: hsl(234, 85%, 45%); */
+    color: hsl(234, 85%, 45%);
 }
 
 .topic-result {
-    /* grid-area: topic-result; */
+   padding-right: 10px;
+}
+
+.topic {
+    display: flex;
+    gap: 15px;
+    padding-left: 10px;
+    padding-right: 5px;
 }
 
 .topic-result-container.reaction {
-    /* background-color: hsla(0, 100%, 67%, 0.200);
-    border-radius: 10%; */
+    background-color: hsla(0, 100%, 67%, 0.100);
+    border-radius: 10px;
+    padding: 2px;
+    width: 90%;
 }
 
 .topic-result-container.memory {
-    /* background-color: hsla(39, 100%, 56%, 0.200);
-    border-radius: 10%; */
+    background-color: hsla(39, 100%, 56%, 0.100);
+    border-radius: 10px;
+    padding: 2px;
+    width: 90%;
 }
 
 .topic-result-container.verbal {
-    /* background-color: hsl(166, 100%, 37%, 0.200);
-    border-radius: 10%; */
+    background-color: hsl(166, 100%, 37%, 0.100);
+    border-radius: 10px;
+    padding: 2px;
+    width: 90%;
 }
 
 .topic-result-container.visual {
-    /* background-color: hsl(234, 85%, 45%, 0.200);
-    border-radius: 10%; */
+    background-color: hsl(234, 85%, 45%, 0.100);
+    border-radius: 10px;
+    padding: 2px;
+    width: 90%;
+}
+
+.grey {
+    color: rgb(159, 159, 160);
 }
 
 body > article:nth-child(3) {
