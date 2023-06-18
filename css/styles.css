@@ -1,7 +1,14 @@
 html {
     font-family: 'Hanken Grotesk', sans-serif;
+background-color: hsl(240, 5%, 91%);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 body {
     display: flex;
@@ -13,20 +20,22 @@ body {
     font-weight: 700;
 }
 
-body > article:first-child {
+/* Result Styles */
+
+.first-article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     width: 100vw;
     margin: 0;
     color: hsl(241, 100%, 89%);
-  }
+}
 
-  .top-container {
+.top-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,14 +43,14 @@ body > article:first-child {
     text-align: center;
     width: 70%;
     padding-bottom: 20px;
-  }
+}
 
-  h1 {
+h1 {
     font-weight: 700;
     margin: 15px;
-  }
+}
 
-  .circle-result {
+.circle-result {
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%;
     padding: 50px;
@@ -51,47 +60,47 @@ body > article:first-child {
     align-items: center;
     width: 60px;
     height: 60px;
-  }
+}
 
-  .main-result {
+.main-result {
     font-weight: 800;
     font-size: 500%;
-  }
+}
 
-  .pale-blue {
+.pale-blue {
     color: hsl(0, 0%, 100%);
-  }
+}
 
-  p.pale-blue {
+p.pale-blue {
     font-size: 25px;
     margin: 15px 0;
-  }
+}
 
-  .light-weight {
+.light-weight {
     font-weight: 500;
-  }
+}
   
-  p.light-weight.percentage { 
+p.light-weight.percentage { 
    margin-top: 0;
-  }
+}
 
 
+/* Summary Styles */
 
-
-body > article:nth-child(2){
+.second-article {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   width: 90vw;
   gap: 15px;
 }
 
-body > article:nth-child(2) > h2 {
+.second-article > #summary {
     padding-right: 200px;
     margin-bottom: 0;
     margin-top: 20px;
-  }
+}
 
 .topic-result-container {
     display: flex;
@@ -158,6 +167,13 @@ body > article:nth-child(2) > h2 {
     color: rgb(159, 159, 160);
 }
 
+.third-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 button {
     color: white;
     font-weight: 700;
@@ -175,23 +191,14 @@ button:hover {
   
 .attribution > a {
    text-decoration: none;
-   color: hsl(234, 85%, 45%);
+   color: hsl(234, 46%, 66%);
    cursor: pointer;
 }
 
 
+/* Media Queries */
 
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 700px) {
     html {
         height: 100vh;
         width: 100vw;
@@ -200,134 +207,45 @@ button:hover {
         justify-content: center;
         align-items: center;
     }
-
-    body {
+    
+    main {
         flex-direction: row;
+        box-shadow: 0 1em 3em -0.4em rgb(142, 142, 150);
+        border: 1px transparent;
+        border-radius: 30px;
     }
     
-    body > article:first-child {
-        border-radius: 10%;
-        width: 200px;
+    /* Result Styles */
+    
+    .first-article {
+        border-radius: 30px;
+        width: 325px;
+        height: 100%;
         margin: 0;
-        color: hsl(241, 100%, 89%);
-      }
-    
-      .top-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 70%;
-        padding-bottom: 20px;
-      }
-    
-      h1 {
-        font-weight: 700;
-        margin: 15px;
-      }
-    
-      .circle-result {
-        background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-        border-radius: 50%;
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-        height: 60px;
-      }
-    
-      .main-result {
-        font-weight: 800;
-        font-size: 500%;
-      }
-    
-      .pale-blue {
-        color: hsl(0, 0%, 100%);
-      }
-    
-      p.pale-blue {
-        font-size: 25px;
-        margin: 15px 0;
-      }
-    
-      .light-weight {
-        font-weight: 500;
-      }
-      
-      p.light-weight.percentage { 
-       margin-top: 0;
-      }
-    
-    
-    
-    
-    body > article:nth-child(2){
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      align-items: center;
-      width: 90vw;
-      gap: 15px;
     }
     
-    body > article:nth-child(2) > h2 {
-        padding-right: 200px;
-        margin-bottom: 0;
-        margin-top: 20px;
-      }
-    
-    .topic-result-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    h1 {
+        padding-bottom: 25px;
     }
     
-    .topic-result {
-       padding-right: 10px;
+    /* Summary Styles */
+    
+    .second-article {
+      width: 325px;
+      margin-left: 15px;
+      margin-right: 15px;
     }
     
-    .topic {
-        display: flex;
-        gap: 15px;
-        padding-left: 10px;
-        padding-right: 5px;
+    .second-article > #summary {
+        padding-right: 190px;
+        margin-top: 35px;
     }
-    
-    .topic-result-container.reaction {
-        background-color: hsla(0, 100%, 67%, 0.100);
-        border-radius: 10px;
-        padding: 2px;
-        width: 90%;
-    }
-    
-    .topic-result-container.memory {
-        background-color: hsla(39, 100%, 56%, 0.100);
-        border-radius: 10px;
-        padding: 2px;
-        width: 90%;
-    }
-    
-    .topic-result-container.verbal {
-        background-color: hsl(166, 100%, 37%, 0.100);
-        border-radius: 10px;
-        padding: 2px;
-        width: 90%;
-    }
-    
-    .topic-result-container.visual {
-        background-color: hsl(234, 85%, 45%, 0.100);
-        border-radius: 10px;
-        padding: 2px;
-        width: 90%;
-    }
+
     
     button {
-        margin: 20px 0 10px 0;
+        border-radius: 40px;
+        margin: 15px 0 10px 2px;
         padding: 20px;
         width: 300px;
     }
-      
-  }
+}
