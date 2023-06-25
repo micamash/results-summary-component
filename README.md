@@ -49,11 +49,11 @@ Small screen:
 
 ### What I learned
 
-I continued my HTML/CSS practice with this project.
+I continued my HTML/CSS practice with this project. I also practiced my JavaScript skills, but adding the results data from the data.json file.
 
 ### Continued development
 
-I have currently hard coded in the data. I plan on returning to this project and using the .json file to create the results dynamically.
+I am looking forward to improving my HTML semantics and accessibility skills as well as improving my JavaScript skills.
 
 ## Author
 
